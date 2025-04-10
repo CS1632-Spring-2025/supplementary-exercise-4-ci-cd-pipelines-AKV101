@@ -48,7 +48,8 @@ jobs:
           key: cached-build-${{github.sha}}
           path: .
 
-  # Uploads dependency graph to GitHub to receive Dependabot alerts
+  # Uploads dependency graph to GitHub to receive Dependabot alerts 
+  # enabled dependency graph!!
   update_dependence_graph:
       needs: [maven_test]  # Enforces that maven_test runs first
 
